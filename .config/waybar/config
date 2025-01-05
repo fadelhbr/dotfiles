@@ -1,0 +1,115 @@
+{
+    "layer": "top",
+    "position": "top",
+    "spacing": 0,
+    "height": 34,
+    "modules-left": [
+        "hyprland/workspaces"
+    ],
+    "modules-center": [
+    ],
+    "modules-right": [
+        "tray",
+        "temperature",
+        "network",
+        "wireplumber",
+        "battery",
+	"clock"
+    ],
+    "hyprland/workspaces": {
+        "on-click": "activate",
+        "format": "{icon}",
+        "format-icons": {
+            "1": "1",
+            "2": "2",
+            "3": "3",
+            "4": "4",
+            "5": "5",
+            "6": "6",
+            "7": "7",
+            "8": "8",
+            "9": "9"
+        },
+        "persistent_workspaces": {
+            "1": [],
+            "2": [],
+            "3": [],
+            "4": [],
+            "5": []
+        }
+    },
+    "tray": {
+        "spacing": 10
+    },
+    "temperature": {
+    // "thermal-zone": 0,
+    "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
+    "critical-threshold": 80,
+    "format-critical": "{temperatureC}°C ",
+    "format": "{temperatureC}°C "
+    },
+    "network": {
+        "format-wifi" : "{icon}",
+        "format-icons": ["󰤯","󰤟","󰤢","󰤥","󰤨"],
+        "format-ethernet": "󰀂",
+        "format-disconnected" : "󰖪",
+	"tooltip-format-wifi": "{icon} {essid}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+        "tooltip-format-ethernet": "󰀂  {ifname}\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
+	"tooltip-format-disconnected": "Disconnected",
+	"interval": 5,
+	"nospacing": 1,
+    },
+    "wireplumber": {
+        "format": "{icon}",
+        "format-bluetooth": "󰂰",
+        "nospacing": 1,
+        "tooltip-format": "Volume : {volume}%",
+        "format-muted": "󰝟",
+        "format-icons": {
+            "headphone": "",
+            "default": ["󰖀","󰕾",""]
+        },
+        "on-click": "pamixer -t",
+        "scroll-step": 1
+    },
+    "battery": {
+        "format": "{capacity}% {icon}",
+        "format-icons": {
+            "charging": [
+                "󰢜",
+                "󰂆",
+                "󰂇",
+                "󰂈",
+                "󰢝",
+                "󰂉",
+                "󰢞",
+                "󰂊",
+                "󰂋",
+                "󰂅"
+            ],
+            "default": [
+                "󰁺",
+                "󰁻",
+                "󰁼",
+                "󰁽",
+                "󰁾",
+                "󰁿",
+                "󰂀",
+                "󰂁",
+                "󰂂",
+                "󰁹"
+            ]
+        },
+        "format-full": "Charged ",
+        "interval": 5,
+        "states": {
+            "warning": 20,
+            "critical": 10
+        },
+        "tooltip": false
+    },"clock": {
+        "tooltip-format": "{calendar}",
+        "format-alt": "{:%a, %d %b %Y}",
+        "format": "{:%I:%M %p}"
+    }
+}
