@@ -31,29 +31,29 @@ window#waybar.hidden {
   font-weight: 500;
   margin-bottom: 0px;
   border-radius: 10px;
-  background: #282828;
+  background: #181926;
   /* default: background: #161320; */
   transition: none;
 }
 
 #workspaces button {
   transition: none;
-  color: #fbf1c7;
+  color: #f5e0dc;
   /* default: color: #b5e8e0; */
   background: transparent;
   border-radius: 2px;
 }
 
 #workspaces button.active {
-  color: #fe8019;
+  color: #8aadf4;
 }
 
 #workspaces button:hover {
   transition: none;
   box-shadow: inherit;
   text-shadow: inherit;
-  color: #d65d0e;
-  border-color: #d65d0e;
+  color: #e78284;
+  border-color: #e78284;
   /* border-color: #e8a2af; */
   /* color: #e8a2af; */
 }
@@ -66,8 +66,8 @@ window#waybar.hidden {
   margin-bottom: 0px;
   border-radius: 10px;
   transition: none;
-  color: #161320;
-  background: #fb4934;
+  color: #e78284;
+  background: #181926;
   /*default: background: #bd93f9;*/
 }
 
@@ -79,8 +79,8 @@ window#waybar.hidden {
   margin-bottom: 0px;
   border-radius: 10px;
   transition: none;
-  color: #1a1826;
-  background: #fae3b0;
+  color: #f2d5cf;
+  background: #181926;
 }
 
 #battery {
@@ -91,13 +91,13 @@ window#waybar.hidden {
   margin-bottom: 0px;
   border-radius: 10px;
   transition: none;
-  color: #161320;
-  background: #b5e8e0;
+  color: #8aadf4;
+  background: #181926;
 }
 
 #battery.critical:not(.charging) {
-  background-color: #b5e8e0;
-  color: #161320;
+  background-color: #181926;
+  color: #8aadf4;
   animation-name: blink;
   animation-duration: 1s;
   animation-timing-function: linear;
@@ -107,12 +107,12 @@ window#waybar.hidden {
 
 @keyframes blink {
   to {
-    background-color: #bf616a;
-    color: #b5e8e0;
+    background-color: #181926;
+    color: #bf616a;
   }
 }
 
-#backlight {
+#tray {
   margin-top: 6px;
   margin-left: 8px;
   padding-left: 10px;
@@ -120,8 +120,7 @@ window#waybar.hidden {
   margin-bottom: 0px;
   border-radius: 10px;
   transition: none;
-  color: #161320;
-  background: #f8bd96;
+  background: #181926;
 }
 
 #clock {
@@ -133,58 +132,7 @@ window#waybar.hidden {
   margin-bottom: 0px;
   border-radius: 10px;
   transition: none;
-  color: #161320;
-  background: #8ec07c;
+  color: #a6d189;
+  background: #181926;
   /*default: background: #abe9b3; */
-}
-
-#memory {
-  margin-top: 6px;
-  margin-left: 8px;
-  padding-left: 10px;
-  margin-bottom: 0px;
-  padding-right: 10px;
-  border-radius: 10px;
-  transition: none;
-  color: #161320;
-  background: #fabd2f;
-  /*default: background: #ddb6f2; */
-}
-
-#cpu {
-  margin-top: 6px;
-  margin-left: 8px;
-  padding-left: 10px;
-  margin-bottom: 0px;
-  padding-right: 10px;
-  border-radius: 10px;
-  transition: none;
-  color: #161320;
-  background: #b8bb26;
-  /*default: background: #96cdfb; */
-}
-
-#custom-launcher {
-  font-size: 24px;
-  margin-top: 6px;
-  margin-left: 8px;
-  padding-left: 10px;
-  padding-right: 5px;
-  border-radius: 10px;
-  transition: none;
-  color: #fe8019;
-  /*default: color: #89dceb; */
-  background: #161320;
-}
-
-#custom-media {
-  margin-top: 6px;
-  margin-left: 8px;
-  padding-left: 10px;
-  padding-right: 10px;
-  margin-bottom: 0px;
-  border-radius: 10px;
-  transition: none;
-  color: #161320;
-  background: #f2cdcd;
 }
